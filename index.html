@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>E-Commerce Store</h1>
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="categories">
+      <a href="#">Mobiles</a>
+      <a href="#">Laptops</a>
+      <a href="#">Accessories</a>
+    </section>
+
+    <section id="products" class="product-list"></section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-summary">
+      <p>Total: $<span id="cart-total">0</span></p>
+      <button onclick="emptyCart()">Empty Cart</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
